@@ -1,0 +1,102 @@
+*{
+    font-family: 'Nixie One', system-ui;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.header{
+    display: flex;
+    flex: auto;
+    max-height: 15vh;
+    justify-content: center;
+    align-items: center;
+    background-color:#dedbd1;
+}
+
+#title{
+    position: absolute;
+    font-size: 3em;
+}
+
+#addBook{
+    display: flex;
+    margin-left: 85vw;
+    height: 7vh;
+    width: 10vw;    
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+}
+
+#contentBox{
+    display: flex;
+    flex: auto;
+    background-color: #f5f4ef;
+    justify-content: center;
+}
+
+.entry{
+    display: grid;
+    margin: 5vh;
+    height: min(40vw, 40vh);
+    width: min(50vw, 50vh);
+    border: 2px solid black;
+    background-color: #dedbd1;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+#form{
+    width: 300px;
+}
+
+#form input{ /*This is the form inside the popup*/
+    height: 100%;
+    width: 100%;
+    margin: 10px auto;
+}
+
+#finBox{
+    display: flex;
+    justify-content: start;
+}
+
+#finLabel{
+    margin-top: 6.5px;
+    position: absolute;
+}
+
+#confirm, #cancel{
+    width: 100%;
+    height: 40px;
+}
+
+#confirm{
+    background-color: lightgreen;
+}
+
+#cancel{
+    background-color: red;
+}
+
+#confirm:hover, #cancel:hover, #addBook:hover{
+    filter: brightness(80%);
+}
+
+#pageNumber{
+    margin-bottom: 10px;
+}

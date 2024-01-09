@@ -144,9 +144,3 @@ newBook.addEventListener("click", () =>{
 closeBtn.addEventListener("click", () => {;
     dialog.close();
 });
-
-const book1 = new Book("The Hobbit", "J.R.R. Tolkien", 300, false);
-const book2 = new Book("1984", "George Orwell", 350);
-myLibrary.addBook(book1);
-myLibrary.addBook(book2);
-displayBook(myLibrary);

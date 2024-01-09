@@ -21,21 +21,20 @@
             <dialog>
                 <form method="dialog" id="form">
                     <label for="bookTitle">Book Title</label>
-                    <input type="text" id="bookTitle" name="bookTitle" required>
+                    <input type="text" id="bookTitle" name="bookTitle" maxlength="100" required>
                     <label for="author">Author</label>
-                    <input type="text" id="author" name="author" required>
-                    <label for="pageNumber">Page Number</label>
+                    <input type="text" id="author" name="author" maxlength="100" required>
+                    <label for="pageNumber">Pages</label>
                     <input type="number" id="pageNumber" name="pageNumber" required>
                     <div id="finBox">
-                        <label for="finished" id="finLabel">Finished Book?</label>
-                        <input type="checkbox" id="finished" name="finished">
+                        <label for="isRead" id="readLabel">Finished Book?</label>
+                        <input type="checkbox" id="isRead" name="isRead">
                     </div>
                     <button id="confirm">Add Book</button>
                     <button id="cancel">Cancel</button>
                 </form>
             </dialog> 
-            <div class="entry"></div>
-            <div class="entry"></div>
+            <div id="entryBox"></div>
         </div>
     </div>
 </body>
